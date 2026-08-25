@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07100d" />
+    <meta name="description" content="Zekun Wang is an MSc student at Aalto University and KTH, interested in robot learning, VLA models, and robotic manipulation." />
+    <meta property="og:title" content="Zekun Wang — Robotics & VLA" />
+    <meta property="og:description" content="MSc student interested in robot learning, robotic manipulation, and real-robot deployment." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zekun.wang/" />
+    <link rel="icon" href="/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <title>Zekun Wang — Robotics & VLA</title>
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Back to top">ZW<span>.</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation"><span></span><span></span></button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="#interests">Interests</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="pulse"></span> MSc student · Aalto × KTH</p>
+          <h1>Zekun<br /><span>Wang.</span></h1>
+          <p class="hero-lede">Interested in <strong>robot learning</strong> and <strong>robotic manipulation</strong>, with hands-on experience in real-robot data collection, policy deployment, and robotic perception.</p>
+          <div class="hero-actions"><a class="button primary" href="#projects">Explore my work <span>↓</span></a><a class="button secondary" href="mailto:zekunwa@kth.se">Get in touch <span>↗</span></a></div>
+        </div>
+        <div class="hero-visual reveal delay-1" aria-label="Portrait of Zekun Wang">
+          <div class="portrait-frame"><img src="/avatar.png" alt="Zekun Wang" /><div class="scanlines" aria-hidden="true"><i></i><i></i><i></i></div></div>
+          <div class="visual-label label-top"><span>01</span> Stockholm / Helsinki</div>
+          <div class="visual-label label-bottom"><span>STATUS</span> Open to collaboration</div>
+          <div class="axis axis-x"></div><div class="axis axis-y"></div>
+        </div>
+        <a class="scroll-cue" href="#interests" aria-label="Scroll to interests"><span>SCROLL</span><i></i></a>
+      </section>
+
+      <section id="interests" class="section-shell section-block">
+        <div class="section-heading reveal"><p class="section-index">01 / CURRENT INTERESTS</p><h2>What I’m exploring<br />right now.</h2></div>
+        <div class="interest-grid">
+          <article class="interest-card reveal"><span>01</span><h3>Robot Learning</h3><p>Learning policies from multimodal observations and robot demonstrations.</p></article>
+          <article class="interest-card reveal delay-1"><span>02</span><h3>Vision-Language-Action</h3><p>Experimenting with foundation models that connect perception, language, and action.</p></article>
+          <article class="interest-card reveal delay-2"><span>03</span><h3>Robotic Manipulation</h3><p>Bimanual systems, deformable objects, and reliable execution on physical robots.</p></article>
+          <article class="interest-card reveal delay-3"><span>04</span><h3>Real-Robot Deployment</h3><p>Data collection, training, system integration, evaluation, and practical debugging.</p></article>
+        </div>
+      </section>
+
+      <section id="projects" class="section-shell section-block">
+        <div class="section-heading row reveal"><div><p class="section-index">02 / SELECTED PROJECTS</p><h2>Things I have<br />built and tested.</h2></div><p class="heading-note">A selection of hands-on work across robot learning, perception, and industrial vision.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-featured reveal">
+            <a class="project-media video-media" href="https://youtu.be/CftRBkU1jvI" target="_blank" rel="noreferrer" aria-label="Watch bimanual garment manipulation demo"><img src="/garment-demo.jpg" alt="TRON2 robot performing a garment manipulation task" /><span class="play">▶</span><span class="media-caption">WATCH LIVE DEMO ↗</span></a>
+            <div class="project-content"><div class="project-meta"><span>PROJECT 01 · 2026</span><span>ROBOT LEARNING · MANIPULATION</span></div><h3>π0.5-based Bimanual<br />Garment Manipulation</h3><p>Collected 506 real-robot demonstrations on a TRON2 bimanual robot, full-fine-tuned π0.5, and deployed the policy for physical task execution.</p><div class="metric-row"><div><strong>506</strong><span>demonstrations</span></div><div><strong>20K</strong><span>training steps</span></div><div><strong>4×H200</strong><span>fine-tuning</span></div></div></div>
+          </article>
+          <article class="project-card compact lidar reveal">
+            <div class="project-art" aria-hidden="true"><div class="lidar-sweep"></div><span class="point p1"></span><span class="point p2"></span><span class="point p3"></span><span class="point p4"></span><span class="point p5"></span></div>
+            <div class="project-content"><div class="project-meta"><span>PROJECT 02 · 2025—26</span><span>3D PERCEPTION</span></div><h3>Real-Time 3D LiDAR Detection & Tracking</h3><p>A distributed ROS2 and Zenoh pipeline for multi-LiDAR point clouds and PointPillars detection.</p><div class="tag-row"><span>ROS2</span><span>Zenoh</span><span>PointPillars</span></div></div>
+          </article>
+          <article class="project-card compact reveal delay-1">
+            <a class="project-media orange-media" href="https://youtu.be/xMIZdvzBFd8" target="_blank" rel="noreferrer"><img src="/orange-sorting.png" alt="Industrial orange sorting machine" /><span class="media-caption">WATCH DEMO ↗</span></a>
+            <div class="project-content"><div class="project-meta"><span>PROJECT 03 · 2021—22</span><span>INDUSTRIAL VISION</span></div><h3>Machine Vision-Based Orange Sorting</h3><p>An eight-camera, hardware-triggered acquisition system with a deployed ResNet-18 classifier.</p><div class="tag-row"><span>40K images</span><span>8 cameras</span><span>ResNet-18</span></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section-shell section-block">
+        <div class="section-heading reveal"><p class="section-index">03 / EXPERIENCE</p><h2>From software systems<br />to physical robots.</h2></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="timeline-date">JUN — AUG 2026</div><div class="timeline-marker"></div><div class="timeline-copy"><p class="company">LIMX DYNAMICS · SHENZHEN</p><h3>Solutions Engineering Intern</h3><p>Worked on embodied AI and robotics solutions involving manipulation, perception, data collection, and real-robot deployment. Evaluated practical trade-offs among VLA-based methods, conventional vision pipelines, and robot control methods.</p></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date">JUL 2022 — JUN 2023</div><div class="timeline-marker"></div><div class="timeline-copy"><p class="company">ALIBABA GROUP, TAOBAO · HANGZHOU</p><h3>Software Development Engineer</h3><p>Contributed to a large-scale low-code platform, working across data delivery pipelines, DSL components, server-side rendering, and platform infrastructure.</p></div></article>
+        </div>
+      </section>
+
+      <section id="education" class="section-shell section-block education-section">
+        <div class="section-heading reveal"><p class="section-index">04 / EDUCATION</p><h2>Education &<br />technical foundation.</h2></div>
+        <div class="education-list">
+          <article class="education-item reveal"><span class="education-year">2025—27</span><div><p>AALTO UNIVERSITY × KTH ROYAL INSTITUTE OF TECHNOLOGY</p><h3>MSc in Autonomous Systems and Intelligent Robots</h3></div><span class="degree-state">IN PROGRESS</span></article>
+          <article class="education-item reveal"><span class="education-year">2018—22</span><div><p>HEBEI UNIVERSITY OF TECHNOLOGY</p><h3>BEng in Computer Science and Technology</h3></div><span class="degree-state muted">COMPLETED</span></article>
+        </div>
+        <div class="skills-strip reveal"><span>TOOLS & TECHNOLOGIES</span><div><b>Python</b><b>C++</b><b>PyTorch</b><b>ROS2</b><b>OpenPI</b><b>Linux</b></div></div>
+      </section>
+
+      <section class="contact section-shell">
+        <p class="section-index reveal">05 / CONTACT</p>
+        <div class="contact-main reveal"><p>Have something in mind?</p><a href="mailto:zekunwa@kth.se">Let’s talk<span>↗</span></a></div>
+        <div class="contact-meta reveal"><p>MSc student interested in robot learning,<br />manipulation, and real-world deployment.</p><div><a href="mailto:zekunwa@kth.se">Email ↗</a><a href="https://github.com/voniu" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/zekun-wang-wzk/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div>
+      </section>
+    </main>
+    <footer><span>© <span id="year"></span> ZEKUN WANG</span><span>BUILT WITH CURIOSITY & CARE</span><a href="#top">BACK TO TOP ↑</a></footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
